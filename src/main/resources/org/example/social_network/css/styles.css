@@ -1,0 +1,69 @@
+.popup {
+    -fx-background-color: white;
+    -fx-padding: 10;
+    -fx-border-color: #cc6000;
+    -fx-border-width: 5;
+    -fx-font-size: 10;
+    -fx-text-fill: #cc6000;
+}
+
+.root{
+    -fx-background-color: #efefef;
+    -fx-text-fill: #3a3a3a;
+    -fx-font-family: monospace;
+    -fx-font-weight: bold;
+    -fx-font-size: 14
+}
+
+.split-pane{
+    -fx-background-color: #efefef;
+    -fx-text-fill: #3a3a3a;
+}
+
+.button{
+    -fx-background-color: #dd6c03;
+    -fx-text-fill: #FFFFFF;
+}
+
+.noheader .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-border-color: #3a3a3a;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+    -fx-border-color: #3a3a3a;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: white;
+}
+
+.special{
+    -fx-font-size: 20;
+    -fx-text-fill: #c86201;
+}
+
+.special_medium{
+    -fx-font-size: 16;
+    -fx-text-fill: #3a3a3a;
+}
+
+.horiz .line{
+    -fx-background-color: #3a3a3a;
+    -fx-pref-height: 1;
+    -fx-border-color: null;
+}
+
+.vert .line{
+    -fx-background-color: #3a3a3a;
+    -fx-pref-width: 1;
+    -fx-border-color: null;
+}

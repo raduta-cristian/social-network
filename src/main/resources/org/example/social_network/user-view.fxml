@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="520.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.social_network.controller.UserController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="520.0" prefWidth="756.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+          <AnchorPane>
+               <children>
+                  <VBox alignment="CENTER" layoutX="38.0" layoutY="79.0" prefHeight="500.0" prefWidth="200.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                         <VBox alignment="CENTER" spacing="10.0">
+                           <ImageView fx:id="pfpImageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                             <Label text="Logged in as: " />
+                             <Label fx:id="activeUserLabel" styleClass="special_medium" />
+                         </VBox>
+                        <Separator maxWidth="120.0" prefHeight="40.0" prefWidth="120.0" styleClass="horiz" />
+                        <Button mnemonicParsing="false" onAction="#handleHome" text="Home" />
+                        <Button mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Separator maxHeight="480.0" orientation="VERTICAL" styleClass="vert" />
+          <AnchorPane fx:id="mainWindow" prefWidth="550.0">
+               <children>
+                  <HBox alignment="CENTER" styleClass="vert" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

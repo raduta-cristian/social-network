@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.social_network.controller.UserPageController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="300.0" spacing="30.0">
+         <children>
+            <ImageView fx:id="profilePicture" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="nameLabel" text="Label" />
+            <Label fx:id="friendCountLabel" text="Label" />
+            <Button fx:id="requestButton" mnemonicParsing="false" onAction="#handleSendRequest" text="Send Request" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

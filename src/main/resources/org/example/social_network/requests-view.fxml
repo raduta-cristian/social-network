@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.social_network.controller.RequestsController">
+    <children>
+        <VBox alignment="CENTER_LEFT" spacing="10.0">
+            <children>
+                <Label text="Requests" />
+                <Label text="Sent:" />
+                <TableView fx:id="sentTableView" maxHeight="150.0">
+                    <columns>
+                        <TableColumn fx:id="sentTableColumnFirstName" text="First Name" />
+                        <TableColumn fx:id="sentTableColumnLastName" prefWidth="75.0" text="Last Name" />
+                        <TableColumn fx:id="sentTableColumnTimeSent" prefWidth="150.0" text="Time sent" />
+                        <TableColumn fx:id="sentTableColumnStatus" text="Status" />
+                    </columns>
+                </TableView>
+                <Label text="Receceived:" />
+                <TableView fx:id="recvTableView" maxHeight="150.0">
+                    <columns>
+                        <TableColumn fx:id="recvTableColumnFirstName" text="First Name" />
+                        <TableColumn fx:id="recvTableColumnLastName" prefWidth="75.0" text="Last Name" />
+                        <TableColumn fx:id="recvTableColumnTimeReceived" prefWidth="150.0" text="Time received" />
+                        <TableColumn fx:id="recvTableColumnStatus" text="Status" />
+                    </columns>
+                </TableView>
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <Button mnemonicParsing="false" onAction="#handleAcceptRequest" text="Accept" />
+                    <Button mnemonicParsing="false" onAction="#handleRejectRequest" text="Reject" />
+                </HBox>
+            </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+        </VBox>
+    </children>
+</AnchorPane>

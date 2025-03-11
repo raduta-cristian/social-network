@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxWidth="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.social_network.controller.LoginController">
+   <children>
+      <VBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Label styleClass="special" text="Welcome to CSocial" />
+            <Label text="Email" />
+            <TextField fx:id="emailField" />
+            <Label text="Password" />
+            <PasswordField fx:id="passwordField" />
+            <Separator prefHeight="30.0" prefWidth="200.0" styleClass="horiz" />
+            <Button mnemonicParsing="false" onAction="#handleLoginUser" text="Log In" />
+            <Label fx:id="warningLabel" />
+            <Button mnemonicParsing="false" onAction="#handleSignIn" text="Sign Up" />
+         </children>
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

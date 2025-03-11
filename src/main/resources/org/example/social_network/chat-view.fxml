@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.social_network.controller.ChatController">
+    <children>
+            <VBox alignment="CENTER">
+                <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                          <Label text="Chatting with:" textAlignment="CENTER" />
+                          <Label text="Label" fx:id="chattingToLabel" textAlignment="CENTER" />
+               </children>
+            </HBox>
+                    <TableView fx:id="tableView">
+                        <columns>
+                            <TableColumn fx:id="tableColumnSentByOther" prefWidth="20.0" />
+                            <TableColumn fx:id="tableColumnText" prefWidth="300.0" text="Text" />
+                            <TableColumn fx:id="tableColumnTimeSent" prefWidth="75.0" text="Time" />
+                            <TableColumn fx:id="tableColumnReplyingTo" prefWidth="100.0" text="Replying To" />
+                        </columns>
+                    </TableView>
+            <HBox alignment="CENTER" prefHeight="50.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="chatTextField" prefWidth="300.0" />
+                  <Button mnemonicParsing="false" onAction="#handleSendMessage" text="Send" />
+                  <Button mnemonicParsing="false" onAction="#handleSendReply" text="Send As Reply" />
+               </children>
+            </HBox>
+                </children>
+            </VBox>
+    </children>
+</AnchorPane>
